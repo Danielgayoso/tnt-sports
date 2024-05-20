@@ -1,12 +1,59 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Cards from '../components/Cards.astro';
+import Video from '../components/Video.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<Card />
+<Layout title="TNT SPORTS">
+	<div class="contenedor">	
+		<Video 
+        	title="Futbol latinoamericano gratis"   
+    	/>
+		<div class="contenedorCard bg-green-100 dark:bg-slate-900 ">
+			<Cards 
+				imgCards='https://a1.espncdn.com/combiner/i?img=%2Fi%2Fespn%2Fespn_logos%2Fespn_red.png'
+				titleCanal="ESPN"
+				textoCanal='ESPN (originalmente siglas de Entertainment and Sports Programming Network) es un grupo de canales de televisión por suscripción estadounidense especializado en los deportes propiedad de ESPN Inc.,'	
+				href="/espn"
+				/>
+			<Cards 
+				imgCards='https://tntsports.cl/__export/1610632680933/sites/cdfchile/arte/apps/facebook_20210114.jpg'
+				titleCanal="TNT Sport Chile"
+				textoCanal='En TNT Sports encuentra información de todo el fútbol de Chile e internacional en un solo lugar. Noticias, videos y estadísticas de fútbol chileno'	
+				href="/tntsports"
+				/>
+			<Cards 
+				imgCards='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIqoxTdI6OMzHPcbB4ziBlL7_VJVCgFsXVD3mknHSP8Q&s'
+				titleCanal='Direct TV Sports'
+				textoCanal='DSports es un canal de televisión por suscripción deportivo latinoamericano. Es exclusivo de la proveedora satelital DirecTV. Los programas del canal son producidos por Torneos.'	
+				href="/directv"
+				/>
+			<Cards 
+				imgCards='https://i.ytimg.com/vi/mq2X0fzpEOY/maxresdefault.jpg'
+				titleCanal="TyC"
+				textoCanal='ESPN (originalmente siglas de Entertainment a'	
+				href=""
+				/>
+		</div>
+	</div>
+	
 </Layout>
 
 <style>
-
+	.contenedor{
+		width: 100vw;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+	}
+	.contenedorCard{
+		width: 100%;
+		padding:5%;
+		height: auto;
+		display: flex;
+		flex-direction: row;
+	}
 </style>

@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Cards from '../components/Cards.astro';
+import Video from '../components/Video.astro';
+---
+
+<Layout title="TNT SPORTS">
+	<div class="contenedor">
+        <Card 
+            src="https://clarovideo.candler.beauty/tntchile.php"    
+        />	
+	</div>
+</Layout>
+
+<style>
+	.contenedor{
+		width: 100vw;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+		background-color: rgb(230, 233, 226);
+	}
+	.contenedorCard{
+		width: 100%;
+		padding:5%;
+		height: auto;
+		display: flex;
+		flex-direction: row;
+	}
+</style>
